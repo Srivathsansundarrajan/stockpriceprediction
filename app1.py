@@ -68,9 +68,9 @@ if st.sidebar.button("Predict Closing Price"):
     prediction = model.predict(input_df)[0]
     st.success(f"Predicted Closing Price for {selected_company}: ${prediction:.2f}")
 
-    # Show chart
-    st.subheader("Prediction Input Overview")
-    st.bar_chart(input_df.T)
+    # # Show chart
+    # st.subheader("Prediction Input Overview")
+    # st.bar_chart(input_df.T)
 
     # Show actual vs predicted comparison
     st.subheader("📊 Actual vs Predicted Closing Price")
